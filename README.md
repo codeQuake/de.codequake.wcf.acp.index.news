@@ -6,7 +6,7 @@ Allows third-parties to intigrate their newsfeeds into the front page of the adm
 How to use?
 -----------
 
-1. Bind a template event on `newsTabMenuTabs` (template `__indexNewsInjection`) to add a new tab to the news tab menu:
+1. Bind a template listener on `newsTabMenuTabs` (template `__indexNewsInjection`) to add a new tab to the news tab menu:
    ```xml
    <templatelistener name="newsTabMenuTabs">
            <environment>admin</environment>
@@ -16,7 +16,7 @@ How to use?
    </templatelistener>
    ```
 
-2. Bind a template event on `newsTabMenuContents` (template `__indexNewsInjection`) to add the tab content:
+2. Bind a template listener on `newsTabMenuContents` (template `__indexNewsInjection`) to add the tab content:
    ```xml
    <templatelistener name="newsTabMenuContents">
            <environment>admin</environment>
