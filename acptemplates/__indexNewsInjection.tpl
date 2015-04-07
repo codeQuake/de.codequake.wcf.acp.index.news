@@ -15,9 +15,16 @@
 	$(function() {
 		var $newsContainer = $('#news').addClass('tabMenuContainer');
 
+		// move containerPadding class so other news tabs don't have to
+		// have a padding
+		$newsContainer.removeClass('containerPadding');
+		$('#news-twitter-timeline').addClass('containerPadding');
+
+		// move tab menu and tab contents
 		$('#newsTabMenu').prependTo($newsContainer).show();
 		$('#newsTabMenuContents > div').detach().appendTo($newsContainer);
 
+		// reload tab menu to initialize new submenu
 		WCF.TabMenu.reload();
 	});
 	//]]>

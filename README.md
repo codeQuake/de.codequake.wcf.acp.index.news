@@ -25,9 +25,9 @@ How to use?
            <templatecode><![CDATA[{include file='__indexNews' application='cms'}]]></templatecode>
    </templatelistener>
    ```
-   **Heads up!** The tab menu content must be wrapped into a `div` element with the same id as the as anchor name specified in step one. Assuming that you want to integrate a twitter widget, an example content might look like this:
+   **Heads up!** The tab menu content must be wrapped into a `div` element with the same id as the anchor name specified in step one. Assuming that you want to integrate a twitter widget, an example content might look like this:
    ```html
-   <div id="codequake">
+   <div id="codequake" class="containerPadding">
            <a class="twitter-timeline" href="https://twitter.com/codeQuake" data-chrome="nofooter transparent" data-widget-id="546662296089821185">Tweets von @codeQuake </a>
    </div>
    ```

@@ -5,7 +5,7 @@
 		<packagename language="de">Drittanbieter-Newsfeeds</packagename>
 		<packagedescription>Allows third-parties to intigrate their newsfeeds into the front page of the admin control panel.</packagedescription>
 		<packagedescription language="de">Ermöglicht Drittanbietern, ihre Newsfeeds in die Startseite der Administrationsoberfläche einzubinden.</packagedescription>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 		<date>2014-12-20</date>
 	</packageinformation>
 
@@ -21,5 +21,9 @@
 	<instructions type="install">
 		<instruction type="acpTemplate">acptemplates.tar</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0">
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
 	</instructions>
 </package>
