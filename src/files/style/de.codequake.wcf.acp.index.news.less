@@ -4,4 +4,12 @@
     .twitter-timeline {
         width: 100% !important;
     }
+
+    // We recommend to embed rss feeds as a `.recentActivityList` for best design. These lists, however, have a default
+    // border radius in the top left and right corner which does not play well together with the tab menu they are
+    // placed in.
+    .recentActivityList > li:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
